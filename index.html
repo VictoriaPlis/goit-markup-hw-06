@@ -41,75 +41,7 @@
             
             <button class="hero-order" data-modal-open>Заказать услугу</button> 
              
-            <div class="backdrop is-hidden" data-modal>
-                <form class="form" autocomplete="off">
-                  <div class="modal">
             
-                  <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
-
-                  <div class="form-field">
-                  
-                  <input class="form-input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder=" "
-                    autofocus
-                  />
-                  <label for="name" class="form-label">Имя</label>
-                  <svg width="12" height="12" class="form-icon">
-                  <use href="./symbol-defs.svg#icon-name"></use>
-                  </svg>
-                  </div>
-          
-                <div class="form-field">
-                  
-                  <input  class="form-input" type="tel" name="tel" id="tel" placeholder=" " autofocus/>
-                  <label class="form-label" for="tel" class="form-label">Телефон</label>
-                  <svg width="13" height="13" class="form-icon">
-                    <use href="./symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                </div>
-          
-                <div class="form-field">
-                  
-                  <input  class="form-input" type="email" name="mail" id="mail" placeholder=" " autofocus/>
-                  <label class="form-label" for="mail" class="form-label">Почта</label>
-                  <svg width="15" height="12" class="form-icon">
-                    <use href="./symbol-defs.svg#icon-e-mail"></use>
-                    </svg>
-                </div>
-          
-                
-          
-                <div class="form-field">
-                  <label  for="comment"></label>
-                  <textarea
-                    class="comment"
-                    name="comment"
-                    id="comment"
-                    rows="8"
-                    placeholder="Комментарий"
-                  ></textarea>
-                </div>
-          
-                <div class="form-field__checkbox">
-
-                  <input class="checkbox" type="checkbox" name="policy" id="policy" />
-                  <span class="icon"></span>
-                  <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <span class="form-field__checkbox--policy">Условия договора</span> </label>
-
-                  
-                </div>
-          
-                <button class="form-field__button" type="submit">Отправить</button>
-                <button class="close-modal" data-modal-close><svg width="11px" height="11px">
-                  <use href="./symbol-defs.svg#icon-close"></use>
-                </svg></button>
-              </form>
-            
-
-          </div>
         </div>
          </section>
 
@@ -261,7 +193,84 @@
                 </section>--> 
             </footer>
              
-             
+            <div class="backdrop is-hidden" data-modal>
+              <form class="form" autocomplete="off">
+                <div class="modal">
+          
+                <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
+
+                <div class="form-field">
+                
+                <input class="form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  autofocus
+                />
+                <label for="name" class="form-label">Имя</label>
+                <svg width="12" height="12" class="form-icon">
+                <use href="./symbol-defs.svg#icon-name"></use>
+                </svg>
+                </div>
+        
+              <div class="form-field">
+                
+                <input  class="form-input" type="tel" name="tel" id="tel" placeholder=" " autofocus/>
+                <label class="form-label" for="tel" class="form-label">Телефон</label>
+                <svg width="13" height="13" class="form-icon">
+                  <use href="./symbol-defs.svg#icon-phone"></use>
+                  </svg>
+              </div>
+        
+              <div class="form-field">
+                
+                <input  class="form-input" type="email" name="mail" id="mail" placeholder=" " autofocus/>
+                <label class="form-label" for="mail" class="form-label">Почта</label>
+                <svg width="15" height="12" class="form-icon">
+                  <use href="./symbol-defs.svg#icon-e-mail"></use>
+                  </svg>
+              </div>
+        
+              
+        
+              <div class="form-field">
+                <label  for="comment"></label>
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="comment"
+                  rows="8"
+                  placeholder="Комментарий"
+                ></textarea>
+              </div>
+        
+              <!--<div class="form-field__checkbox">
+                <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <span class="form-field__checkbox--policy">Условия договора</span> </label>
+                <input class="checkbox" type="checkbox" name="policy" id="policy" />
+                <span class="icon-check"></span>                 
+              </div>-->
+
+              <label class="form-field__checkbox">
+                <input type="checkbox" class="checkbox" name="checkbox"></input>
+                <span class="icon-check"></span>
+                <span class="policy">Соглашаюсь с рассылкой и принимаю <a class="form-field__checkbox--policy" href>Условия договора</a></span>
+          </span>
+              </label>
+              
+
+
+
+
+        
+              <button class="form-field__button" type="submit">Отправить</button>
+              <button class="close-modal" data-modal-close><svg width="11px" height="11px">
+                <use href="./symbol-defs.svg#icon-close"></use>
+              </svg></button>
+            </form>
+          
+
+        </div>     
         <script src="./js/modal.js"></script>
         
         </body>
